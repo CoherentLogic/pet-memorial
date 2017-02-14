@@ -4,8 +4,8 @@ var path = require('path');
 
 module.exports = {
     context: path.join(__dirname, "client/src"),
-    devtool: debug ? "inline-sourcemap" : "",
-    entry: "./js/client.js",
+    devtool: debug ? "inline-sourcemap" : false,
+    entry: "./js/client.jsx",
     module: {
 	loaders: [
 	    {
@@ -16,8 +16,20 @@ module.exports = {
 		    presets: ['react', 'es2015', 'stage-0'],
 		    plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
 		}
-	    }
+	    },
+	    {
+		test: /\.jsx?$/,
+		exclude: /(node_modules|bower_components)/,
+		loader: 'babel-loader',
+		query: {
+		    presets: ['react', 'es2015', 'stage-0'],
+		    plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
+		}
+	    }	    
 	]
+    },
+    resolve: {
+	extensions: ['', '.js', '.jsx']
     },
     output: {
 	path: __dirname + "/client/public/js/",

@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+
+    padding: 0;
+    background-color:#d2b48c;
+    color: #a89070;
+}
+
+.box {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.nav {
+
+}
+
+.pet-name {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 72px;
+}
+
+.pet-dates {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.divider {
+    border: 0;
+    height: 30px;
+    border-style: solid;
+    border-color: #a89070;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.divider:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #a89070;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
