@@ -12,11 +12,11 @@ const app = document.getElementById('app');
 
 ReactDOM.render(
     <Router history={hashHistory}>
-	<Route path="/" component={Layout}>
-	    <IndexRedirect to="/bio"/>
-	    <Route path="bio" component={Bio}/>
-	    <Route path="stories" component={Stories}/>
-	    <Route path="guestbook" component={Guestbook}/>
-	    <Route path="gallery" component={Gallery}/>
-	</Route>
+        <Route path="/" component={Layout}>
+            <IndexRedirect to="/bio"/>
+            <Route path="bio" component={Bio}/>
+            <Route path="stories" component={Stories}/>
+            <Route path="guestbook" component={Guestbook}/>
+            <Route path="gallery" component={Gallery}/>
+        </Route>
     </Router>, app);

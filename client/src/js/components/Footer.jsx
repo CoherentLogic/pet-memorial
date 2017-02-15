@@ -4,11 +4,13 @@ import axios from "axios";
 export default class Footer extends React.Component {
 
     constructor() {
-	super();
+        super();
     }
 
     render() {
-	return(<footer class="box footer">Copyright &copy; 2017 Coherent Logic Development</footer>);
+        return(
+            <footer class="box footer">Copyright &copy; 2017 Coherent Logic Development</footer>
+            );
     }
 
 }

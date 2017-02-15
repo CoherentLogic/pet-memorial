@@ -4,13 +4,13 @@ import axios from "axios";
 export default class Stories extends React.Component {
 
     constructor() {
-	super();
+		super();
     }
 
     render() {
-	return(
-	    <div class="box">Stories</div>
-	);
+		return(
+		    <div class="box">Stories</div>
+		);
     }
 
 }

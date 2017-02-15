@@ -4,13 +4,13 @@ import axios from "axios";
 export default class Gallery extends React.Component {
 
     constructor() {
-	super();
+        super();
     }
 
     render() {
-	return(
-	    <div class="box">Gallery</div>
-	);
+        return(
+            <div class="box">Gallery</div>
+            );
     }
 
 }

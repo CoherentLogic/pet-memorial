@@ -8,18 +8,18 @@ import Footer from "./Footer";
 export default class Layout extends React.Component {
 
     constructor() {
-	super();
+        super();
     }
 
     render() {
-	return(
-	    <div>
-		<Header />
-		<Navigation />
-		{this.props.children}
-		<Footer />
-	    </div>
-	);
+        return(
+            <div>
+                <Header />
+                <Navigation />
+                {this.props.children}
+                <Footer />
+            </div>
+            );
     }
 
 }

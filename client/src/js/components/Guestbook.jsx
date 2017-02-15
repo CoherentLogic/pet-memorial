@@ -4,13 +4,13 @@ import axios from "axios";
 export default class Guestbook extends React.Component {
 
     constructor() {
-	super();
+        super();
     }
 
     render() {
-	return(
-	    <div class="box">Guestbook</div>
-	);
+        return(
+            <div class="box">Guestbook</div>
+            );
     }
 
 }
